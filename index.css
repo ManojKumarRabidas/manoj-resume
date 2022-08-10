@@ -19,11 +19,12 @@ body{
     /* grid-gap: 2px; */
     /* height: 100vh; */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 0.8fr 1.5fr 1fr 1fr;
+    /* grid-template-rows: 0.3fr 0.3fr 0.8fr 1fr 1fr 1fr; */
+    grid-template-rows: 0.3fr 0.fr 0.fr 0fr 1fr 1fr;
     grid-template-areas: 
     "top top pic"
     "contact about about"
-    "contact training training"
+    "skill training training"
     "skill professional professional"
     "education hobbies hobbies"
     "education personal personal";
@@ -53,6 +54,7 @@ img{
 ul li{
     text-decoration: none;
     list-style: none;
+    line-height: 180%;
 }
 /* for the left section  */
 .education, .contact, .skill {
@@ -68,8 +70,23 @@ ul li{
 .contact{
     grid-area: contact;
 }
+.lnk i a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.lnk i {
+    color: rgb(249, 191, 58);
+}
+.lnk i a:hover{
+    color: rgb(255, 255, 157);
+    font-size: 102%;
+    text-decoration: none;
+}
 .skill{
     grid-area: skill;
+}
+.skl{
+    color:rgb(255, 196, 0) ;
 }
 .education{
     grid-area: education;
@@ -89,6 +106,7 @@ ul li{
 .professional{
     grid-area: professional;
 }
+
 .hobbies{
     grid-area: hobbies;
 }
@@ -104,9 +122,9 @@ ul li{
         font-size: 20px;
         display: grid;
         /* grid-gap: 2px; */
-        /* height: 100vh; */
+        height: 100vh;
         grid-template-columns: 1fr ;
-        /* grid-template-rows: 0fr 0.3fr 0.8fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: 0.fr 0.fr 0.fr 0.fr 1fr 0.fr 0.fr 0.fr 0.fr 0.fr; */
         grid-template-areas: 
         "pic"
         "top"
