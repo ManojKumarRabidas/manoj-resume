@@ -79,7 +79,7 @@ ul li{
 }
 .lnk i a:hover{
     color: rgb(255, 255, 157);
-    font-size: 102%;
+    /*font-size: 102%;*/
     text-decoration: none;
 }
 .skill{
